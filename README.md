@@ -1,2 +1,0 @@
-# Protfolio
-This is my personal portfolio website, built with React and Tailwind CSS to showcase my skills, projects, and experience as a developer. It features a modern, clean, and responsive design that works across different screen sizes. Through this project, I improved my React skills, practiced building reusable components, and explored how to create attractive user interfaces with Tailwind CSS. This project represents my continuous learning and growth as a developer.
