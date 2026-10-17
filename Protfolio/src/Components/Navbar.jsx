@@ -18,7 +18,7 @@ export default function Navbar() {
           </span>
 
           <span className="text-xl font-bold tracking-wide text-white sm:text-2xl">
-            Sara<span className="text-violet-500">.</span>
+            Sara<span className="text-violet-500"></span>
           </span>
         </NavLink>
 
