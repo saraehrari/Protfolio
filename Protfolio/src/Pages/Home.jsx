@@ -12,9 +12,11 @@ export default function Home({ image, title, para, boutton }) {
             HELLO, I'M SARA
           </p>
 
-          <h1 className="mb-6 text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
-            {title}
-          </h1>
+         <h1 className="mb-6 text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+  Crafting Modern &{" "}
+  <span className="text-purple-500">Interactive</span>{" "}
+  Web Experiences
+</h1>
 
           <p className="mb-8 max-w-lg text-lg leading-8 text-gray-400">
             {para}
