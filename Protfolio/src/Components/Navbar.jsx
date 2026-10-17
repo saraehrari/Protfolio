@@ -1,75 +1,55 @@
-
-
-
-
-     import { NavLink } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 export default function Navbar() {
+  const linkStyle = ({ isActive }) =>
+    `rounded-full px-4 py-2 text-sm font-medium transition-all duration-300 sm:px-5 sm:text-base ${
+      isActive
+        ? "bg-violet-600 text-white shadow-lg shadow-violet-500/25"
+        : "text-gray-400 hover:bg-white/5 hover:text-white"
+    }`;
+
   return (
-    <nav className="bg-white shadow-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-xl">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
 
         {/* Logo */}
-        <NavLink to="/" className="text-2xl font-bold text-blue-600">
-          Sara<span className="text-gray-900">.</span>
+        <NavLink to="/" className="group flex items-center gap-2">
+          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500 to-blue-600 text-lg font-bold text-white shadow-lg shadow-violet-500/20 transition-transform duration-300 group-hover:scale-110">
+            S
+          </span>
+
+          <span className="text-xl font-bold tracking-wide text-white sm:text-2xl">
+            Sara<span className="text-violet-500">.</span>
+          </span>
         </NavLink>
 
         {/* Navigation Links */}
-        <div className="flex items-center gap-2 sm:gap-6">
-          <NavLink
-            to="/"
-            end
-            className={({ isActive }) =>
-              `rounded-lg px-3 py-2 text-sm font-medium transition duration-300 sm:text-base ${
-                isActive
-                  ? "bg-blue-600 text-white"
-                  : "text-gray-600 hover:bg-blue-50 hover:text-blue-600"
-              }`
-            }
-          >
+        <div className="flex items-center gap-1 sm:gap-3">
+          <NavLink to="/" end className={linkStyle}>
             Home
           </NavLink>
 
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              `rounded-lg px-3 py-2 text-sm font-medium transition duration-300 sm:text-base ${
-                isActive
-                  ? "bg-blue-600 text-white"
-                  : "text-gray-600 hover:bg-blue-50 hover:text-blue-600"
-              }`
-            }
-          >
+          <NavLink to="/about" className={linkStyle}>
             About
           </NavLink>
 
-          <NavLink
-            to="/portfolio"
-            className={({ isActive }) =>
-              `rounded-lg px-3 py-2 text-sm font-medium transition duration-300 sm:text-base ${
-                isActive
-                  ? "bg-blue-600 text-white"
-                  : "text-gray-600 hover:bg-blue-50 hover:text-blue-600"
-              }`
-            }
-          >
+          <NavLink to="/portfolio" className={linkStyle}>
             Portfolio
           </NavLink>
 
           <NavLink
             to="/contact"
             className={({ isActive }) =>
-              `rounded-lg px-4 py-2 text-sm font-semibold transition duration-300 sm:text-base ${
+              `ml-1 rounded-full border px-4 py-2 text-sm font-semibold transition-all duration-300 sm:ml-2 sm:px-6 sm:text-base ${
                 isActive
-                  ? "bg-blue-700 text-white"
-                  : "bg-blue-600 text-white hover:bg-blue-700"
+                  ? "border-violet-400 bg-violet-600 text-white"
+                  : "border-violet-500/50 bg-transparent text-violet-300 hover:border-violet-400 hover:bg-violet-600 hover:text-white hover:shadow-lg hover:shadow-violet-500/20"
               }`
             }
           >
-            Contact
+            Let's Talk <span className="ml-1">↗</span>
+
           </NavLink>
         </div>
-
       </div>
     </nav>
   );
