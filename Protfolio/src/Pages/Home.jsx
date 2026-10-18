@@ -184,6 +184,92 @@ export default function Home({ image, title, para, boutton }) {
       <div className="pointer-events-none absolute right-[5%] top-[70%] text-xl text-fuchsia-200 drop-shadow-[0_0_15px_#e879f9]">
         ✧
       </div>
+      <div className="pointer-events-none absolute right-[5%] top-[70%] text-xl text-fuchsia-200 drop-shadow-[0_0_15px_#e879f9]">
+        ✧
+      </div>
+     <div className="pointer-events-none absolute left-[5%] top-[60%] text-sm text-blue-200 drop-shadow-[0_0_12px_#60a5fa]">
+        ✦
+      </div>
+
+      <div className="pointer-events-none absolute right-[5%] top-[70%] text-xl text-fuchsia-200 drop-shadow-[0_0_15px_#e879f9]">
+        ✧
+      </div>
+     <div className="pointer-events-none absolute left-[5%] top-[60%] text-sm text-blue-200 drop-shadow-[0_0_12px_#60a5fa]">
+        ✦
+      </div>
+
+      <div className="pointer-events-none absolute right-[5%] top-[70%] text-xl text-fuchsia-200 drop-shadow-[0_0_15px_#e879f9]">
+        ✧
+      </div>
+
+      <div className="pointer-events-none absolute right-[5%] top-[70%] text-xl text-fuchsia-200 drop-shadow-[0_0_15px_#e879f9]">
+        ✧
+      </div>
+     <div className="pointer-events-none absolute left-[5%] top-[60%] text-sm text-blue-200 drop-shadow-[0_0_12px_#60a5fa]">
+        ✦
+      </div>
+
+      <div className="pointer-events-none absolute right-[5%] top-[70%] text-xl text-fuchsia-200 drop-shadow-[0_0_15px_#e879f9]">
+        ✧
+      </div>
+     <div className="pointer-events-none absolute left-[5%] top-[60%] text-sm text-blue-200 drop-shadow-[0_0_12px_#60a5fa]">
+        ✦
+      </div>
+
+      <div className="pointer-events-none absolute right-[5%] top-[70%] text-xl text-fuchsia-200 drop-shadow-[0_0_15px_#e879f9]">
+        ✧
+      </div>
+       <div className="pointer-events-none absolute right-[5%] top-[70%] text-xl text-fuchsia-200 drop-shadow-[0_0_15px_#e879f9]">
+        ✧
+      </div>
+     <div className="pointer-events-none absolute left-[5%] top-[60%] text-sm text-blue-200 drop-shadow-[0_0_12px_#60a5fa]">
+        ✦
+      </div>
+
+      <div className="pointer-events-none absolute right-[5%] top-[70%] text-xl text-fuchsia-200 drop-shadow-[0_0_15px_#e879f9]">
+        ✧
+      </div>
+     <div className="pointer-events-none absolute left-[5%] top-[60%] text-sm text-blue-200 drop-shadow-[0_0_12px_#60a5fa]">
+        ✦
+      </div>
+
+      <div className="pointer-events-none absolute right-[5%] top-[70%] text-xl text-fuchsia-200 drop-shadow-[0_0_15px_#e879f9]">
+        ✧
+      </div>
+      <div className="pointer-events-none absolute right-[5%] top-[70%] text-xl text-fuchsia-200 drop-shadow-[0_0_15px_#e879f9]">
+        ✧
+      </div>
+     <div className="pointer-events-none absolute left-[5%] top-[60%] text-sm text-blue-200 drop-shadow-[0_0_12px_#60a5fa]">
+        ✦
+      </div>
+
+      <div className="pointer-events-none absolute right-[5%] top-[70%] text-xl text-fuchsia-200 drop-shadow-[0_0_15px_#e879f9]">
+        ✧
+      </div>
+     <div className="pointer-events-none absolute left-[5%] top-[60%] text-sm text-blue-200 drop-shadow-[0_0_12px_#60a5fa]">
+        ✦
+      </div>
+
+      <div className="pointer-events-none absolute right-[5%] top-[70%] text-xl text-fuchsia-200 drop-shadow-[0_0_15px_#e879f9]">
+        ✧
+      </div>
+      <div className="pointer-events-none absolute right-[5%] top-[70%] text-xl text-fuchsia-200 drop-shadow-[0_0_15px_#e879f9]">
+        ✧
+      </div>
+     <div className="pointer-events-none absolute left-[5%] top-[60%] text-sm text-blue-200 drop-shadow-[0_0_12px_#60a5fa]">
+        ✦
+      </div>
+
+      <div className="pointer-events-none absolute right-[5%] top-[70%] text-xl text-fuchsia-200 drop-shadow-[0_0_15px_#e879f9]">
+        ✧
+      </div>
+     <div className="pointer-events-none absolute left-[5%] top-[60%] text-sm text-blue-200 drop-shadow-[0_0_12px_#60a5fa]">
+        ✦
+      </div>
+
+      <div className="pointer-events-none absolute right-[5%] top-[70%] text-xl text-fuchsia-200 drop-shadow-[0_0_15px_#e879f9]">
+        ✧
+      </div>
 
 
       {/* Main Content */}

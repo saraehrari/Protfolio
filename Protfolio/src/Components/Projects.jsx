@@ -56,7 +56,7 @@ export default function Projects() {
               <img
                 src={project.image}
                 alt={`${project.name} project screenshot`}
-                className="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="h-70 w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
 
               <div className="p-5">
