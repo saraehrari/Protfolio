@@ -1,21 +1,39 @@
 
+
+
 import {
   SiReact,
   SiJavascript,
   SiTailwindcss,
   SiHtml5,
-  SiCss3,
+  SiCss,
   SiGit,
+  SiBootstrap,
+  SiJira,
+  SiGithub,
+  SiTypescript,
+  SiNodedotjs,
+  SiFigma,
 } from "react-icons/si";
+
+
 
 const skills = [
   { name: "React", icon: SiReact },
   { name: "JavaScript", icon: SiJavascript },
   { name: "Tailwind CSS", icon: SiTailwindcss },
   { name: "HTML5", icon: SiHtml5 },
-  { name: "CSS3", icon: SiCss3 },
+  { name: "CSS3", icon: SiCss },
+  { name: "Bootstrap", icon: SiBootstrap },
   { name: "Git", icon: SiGit },
+  { name: "GitHub", icon: SiGithub },
+  { name: "Jira", icon: SiJira },
+  { name: "TypeScript", icon: SiTypescript },
+  { name: "Node.js", icon: SiNodedotjs },
+  { name: "Figma", icon: SiFigma },
+
 ];
+
 
 export default function Skills() {
   return (
