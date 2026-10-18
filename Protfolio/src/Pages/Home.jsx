@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
+import Skills from "../Components/Skills";
 export default function Home({ image, title, para, boutton }) {
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#0B0912] px-6 text-white sm:px-10">
@@ -219,7 +220,11 @@ export default function Home({ image, title, para, boutton }) {
 
         </div>
 
+
       </div>
+      <Skills/>
     </div>
+
+    
   );
 }
