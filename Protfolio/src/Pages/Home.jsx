@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-
+import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 export default function Home({ image, title, para, boutton }) {
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#0B0912] px-6 text-white sm:px-10">
@@ -135,12 +135,53 @@ export default function Home({ image, title, para, boutton }) {
             {para}
           </p>
 
-          <Link
-            to="/portfolio"
-            className="inline-block rounded-lg bg-purple-600 px-6 py-3 font-semibold text-white transition duration-300 hover:bg-purple-500 hover:shadow-lg hover:shadow-purple-500/30"
-          >
-            {boutton || "Explore My Work"}
-          </Link>
+<div className="flex flex-wrap items-center gap-5">
+
+  {/* Portfolio Button */}
+  <Link
+    to="/portfolio"
+    className="inline-flex items-center rounded-lg bg-purple-600 px-6 py-3 font-semibold text-white transition duration-300 hover:bg-purple-500 hover:shadow-lg hover:shadow-purple-500/30"
+  >
+    {boutton || "Explore My Work"}
+  </Link>
+
+  {/* Social Media Icons */}
+  <div className="flex items-center gap-3">
+
+    <a
+      href="https://github.com/yourusername"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="GitHub"
+      className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-xl text-gray-300 transition duration-300 hover:border-purple-500 hover:bg-purple-500/10 hover:text-purple-400"
+    >
+      <FaGithub />
+    </a>
+
+    <a
+      href="https://linkedin.com/in/yourusername"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+      className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-xl text-gray-300 transition duration-300 hover:border-purple-500 hover:bg-purple-500/10 hover:text-purple-400"
+    >
+      <FaLinkedinIn />
+    </a>
+
+    <a
+      href="https://x.com/yourusername"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="X"
+      className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-xl text-gray-300 transition duration-300 hover:border-purple-500 hover:bg-purple-500/10 hover:text-purple-400"
+    >
+      <FaXTwitter />
+    </a>
+
+  </div>
+
+</div>
+
         </div>
 
         {/* Image Section */}
