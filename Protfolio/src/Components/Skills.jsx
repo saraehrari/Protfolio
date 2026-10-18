@@ -1,18 +1,28 @@
+
+import {
+  SiReact,
+  SiJavascript,
+  SiTailwindcss,
+  SiHtml5,
+  SiCss3,
+  SiGit,
+} from "react-icons/si";
+
 const skills = [
-  { name: "React", icon: "⚛️" },
-  { name: "JavaScript", icon: "JS" },
-  { name: "HTML5", icon: "5" },
-  { name: "CSS3", icon: "✳" },
-  { name: "Tailwind CSS", icon: "🌊" },
-  { name: "Git & GitHub", icon: "⌘" },
-  { name: "REST API", icon: "↔" },
-  { name: "React Router", icon: "⇄" },
-  { name: "Jira", icon: "✓" },
+  { name: "React", icon: SiReact },
+  { name: "JavaScript", icon: SiJavascript },
+  { name: "Tailwind CSS", icon: SiTailwindcss },
+  { name: "HTML5", icon: SiHtml5 },
+  { name: "CSS3", icon: SiCss3 },
+  { name: "Git", icon: SiGit },
 ];
 
-export default function Carts() {
+export default function Skills() {
   return (
-    <section className="bg-[#100d18] px-6 py-24 text-white">
+    <section
+      id="skills"
+      className="bg-[#100d18] px-6 py-20 text-white sm:py-24"
+    >
       <div className="mx-auto max-w-6xl">
 
         {/* Section Heading */}
@@ -20,38 +30,38 @@ export default function Carts() {
           What I Work With
         </p>
 
-        <h2 className="mb-4 text-3xl font-bold md:text-5xl">
+        <h2 className="mb-4 text-3xl font-bold sm:text-4xl md:text-5xl">
           My Technical{" "}
           <span className="text-purple-400">Skills</span>
         </h2>
 
         <p className="mb-12 max-w-xl leading-7 text-gray-400">
-          Technologies and tools I use to build and test
-          modern web applications.
+          Technologies and tools I use to build modern,
+          responsive, and interactive web applications.
         </p>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
 
-          {skills.map((skill) => (
-            <div
-              key={skill.name}
-              className="group flex min-h-36 flex-col items-center justify-center
-              gap-4 rounded-2xl border border-purple-900/60
-              bg-[#211a30] p-6 transition duration-300
-              hover:-translate-y-2 hover:border-purple-400
-              hover:bg-purple-950/60 hover:shadow-lg
-              hover:shadow-purple-500/10"
-            >
-              <span className="text-3xl font-bold text-purple-300 transition duration-300 group-hover:scale-110">
-                {skill.icon}
-              </span>
+          {skills.map((skill) => {
+            const Icon = skill.icon;
 
-              <h3 className="text-center text-sm font-medium text-gray-200">
-                {skill.name}
-              </h3>
-            </div>
-          ))}
+            return (
+              <div
+                key={skill.name}
+                className="group flex min-h-36 flex-col items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:-translate-y-2 hover:border-purple-500/50 hover:bg-purple-500/[0.08] hover:shadow-xl hover:shadow-purple-900/20"
+              >
+                <Icon
+                  aria-hidden="true"
+                  className="text-4xl text-purple-400 transition-transform duration-300 group-hover:scale-110 group-hover:text-purple-300"
+                />
+
+                <h3 className="text-center text-sm font-semibold text-gray-200 transition-colors duration-300 group-hover:text-white">
+                  {skill.name}
+                </h3>
+              </div>
+            );
+          })}
 
         </div>
       </div>
