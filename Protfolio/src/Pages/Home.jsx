@@ -149,7 +149,7 @@ export default function Home({ image, title, para, boutton }) {
   <div className="flex items-center gap-3">
 
     <a
-      href="https://github.com/yourusername"
+      href="https://github.com/saraehrari"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="GitHub"
