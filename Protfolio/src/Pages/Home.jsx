@@ -441,7 +441,10 @@ export default function Home({ image, title, para, boutton }) {
       <Projects/>
      <CurrentlyLearning/>
 
-       <Contact/>
+       <Contact
+          title="Let's Work Together"
+        para="I'm learning React and building creative projects. Let's connect and create something amazing together."
+       />
      
     </div>
 
