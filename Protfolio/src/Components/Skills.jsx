@@ -1,6 +1,3 @@
-
-
-
 import {
   SiReact,
   SiJavascript,
@@ -15,8 +12,6 @@ import {
   SiNodedotjs,
   SiFigma,
 } from "react-icons/si";
-
-
 
 const skills = [
   { name: "React", icon: SiReact },
@@ -33,7 +28,6 @@ const skills = [
   { name: "Figma", icon: SiFigma },
 
 ];
-
 
 export default function Skills() {
   return (
