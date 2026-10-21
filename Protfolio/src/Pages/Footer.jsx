@@ -28,7 +28,7 @@ export default function Footer({ children }) {
             {/* Social Links */}
             <div className="mt-5 flex gap-4">
               <a
-                href="https://github.com/"
+               href="https://github.com/saraehrari"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="GitHub"
@@ -38,7 +38,7 @@ export default function Footer({ children }) {
               </a>
 
               <a
-                href="https://linkedin.com/"
+                href="linkedin.com/in/sara-ehrari"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn"
@@ -48,7 +48,7 @@ export default function Footer({ children }) {
               </a>
 
               <a
-                href="https://x.com/"
+                href="https://x.com/SHatamy9109"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="X"
