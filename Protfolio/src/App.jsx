@@ -7,6 +7,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Portfolio from "./Pages/Protfolio";
 import Contact from "./Pages/Contact";
+import Footer from "./Pages/Footer";
 
 
 
@@ -30,7 +31,11 @@ function App(){
       <Route path="/about" element={<About />} />
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/contact" element={<Contact/>} />
+
    </Routes>
+<Footer>
+  <p>Thanks for visiting my portfolio!</p>
+</Footer>
 </div>
 
     )
