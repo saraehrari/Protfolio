@@ -1,5 +1,4 @@
 
-   
 import {
   Target,
   Layers3,
@@ -8,132 +7,124 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 
-const approach = [
+const steps = [
   {
     number: "01",
-    name: "Understand",
+    title: "Understand",
     description:
-      "I start by understanding the goals, requirements, and needs of each project.",
+      "I understand the goals, requirements, and needs of every project.",
     icon: Target,
   },
   {
     number: "02",
-    name: "Plan & Design",
+    title: "Plan & Design",
     description:
-      "I organize ideas and focus on creating clean, intuitive, and user-friendly interfaces.",
+      "I organize ideas into clean, intuitive, and user-friendly interfaces.",
     icon: Layers3,
   },
   {
     number: "03",
-    name: "Build",
+    title: "Build",
     description:
-      "I turn ideas into responsive web experiences using modern frontend technologies.",
+      "I create responsive web experiences using modern frontend technologies.",
     icon: Code2,
   },
   {
     number: "04",
-    name: "Test & Improve",
+    title: "Test & Improve",
     description:
-      "I check functionality, identify issues, and refine the experience to improve quality.",
+      "I test functionality, fix issues, and refine the user experience.",
     icon: ShieldCheck,
   },
 ];
 
 export default function Myapproach() {
   return (
-    <section className="relative isolate overflow-hidden bg-[#070611] text-white">
-      {/* Background image */}
+    <section className="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#070611] text-white">
+      {/* Background */}
       <div
-        className="absolute inset-0 -z-20 bg-cover bg-center opacity-65"
-        style={{
-          backgroundImage: "url('/src/assets/approach-bg.png')",
-        }}
+        aria-hidden="true"
+        className="absolute inset-0 -z-20 bg-cover bg-center opacity-60"
+        
       />
 
-      {/* Dark overlay for readability */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[#080714]/50 via-[#080714]/70 to-[#070611]" />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 bg-gradient-to-b from-[#070611]/60 via-[#070611]/75 to-[#070611]"
+      />
 
-      {/* Purple glow effects */}
-      <div className="pointer-events-none absolute -left-40 top-20 -z-10 h-96 w-96 rounded-full bg-purple-700/20 blur-[130px]" />
-      <div className="pointer-events-none absolute -right-32 top-10 -z-10 h-96 w-96 rounded-full bg-indigo-600/20 blur-[140px]" />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -left-32 top-20 -z-10 h-80 w-80 rounded-full bg-purple-600/20 blur-[120px]"
+      />
 
-      <div className="mx-auto max-w-7xl px-6 py-24 sm:px-10 lg:py-32">
+      {/* Centered content */}
+      <div className="mx-auto flex max-w-7xl flex-col items-center px-6 py-24 text-center sm:px-10 lg:py-32">
         {/* Heading */}
-        <div className="max-w-2xl">
-          <div className="mb-7 flex items-center gap-4">
-            <span className="h-px w-12 bg-purple-400" />
-            <p className="text-xs uppercase tracking-[0.4em] text-purple-300">
+       <header className="relative mx-auto flex w-full max-w-7xl flex-col items-center justify-center px-6 py-16 text-center sm:px-10">
+          <div className="mb-7 flex items-center justify-center gap-4">
+            <span className="h-px w-10 bg-purple-400" />
+            <p className="text-xs uppercase tracking-[0.35em] text-purple-300">
               My Approach
             </p>
+            <span className="h-px w-10 bg-purple-400" />
           </div>
 
-          <h2 className="text-5xl font-semibold leading-[1.05] tracking-tight sm:text-7xl">
+          <h2 className="text-5xl font-semibold leading-tight tracking-tight sm:text-7xl">
             From Idea to
             <span className="block font-serif italic text-purple-400">
               Impact.
             </span>
           </h2>
 
-          <p className="mt-7 max-w-lg text-base leading-8 text-indigo-100/80 sm:text-lg">
-            I follow a simple yet effective process to turn ideas into real,
-            user-friendly web experiences.
+          <p className="mx-auto mt-6 max-w-xl text-base leading-8 text-indigo-100/75 sm:text-lg">
+            A thoughtful process for transforming ideas into beautiful,
+            accessible, and user-friendly web experiences.
           </p>
+        </header>
+
+        {/* Centered process steps */}
+        <div className="relative mt-20 grid w-full gap-14 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+          {steps.map(({ number, title, description, icon: Icon }) => (
+            <article
+              key={number}
+              className="group flex flex-col items-center text-center"
+            >
+              <div className="relative mb-8 flex h-32 w-32 items-center justify-center rounded-[2rem] border border-purple-300/25 bg-white/[0.05] shadow-[0_0_35px_rgba(139,92,246,0.12)] backdrop-blur-xl transition duration-500 group-hover:-translate-y-2 group-hover:border-purple-300/70 group-hover:shadow-[0_0_45px_rgba(139,92,246,0.3)]">
+                <div className="absolute inset-2 rounded-[1.5rem] border border-white/[0.07]" />
+
+                <Icon
+                  size={42}
+                  strokeWidth={1.5}
+                  aria-hidden="true"
+                  className="text-purple-200 transition duration-300 group-hover:scale-110 group-hover:text-white"
+                />
+
+                <span className="absolute -bottom-4 left-1/2 flex h-9 w-9 -translate-x-1/2 items-center justify-center rounded-full border border-purple-400/40 bg-[#130d2b] text-xs font-medium">
+                  {number}
+                </span>
+              </div>
+
+              <h3 className="text-xl font-semibold sm:text-2xl">
+                {title}
+              </h3>
+
+              <p className="mt-4 max-w-xs text-sm leading-7 text-indigo-100/70">
+                {description}
+              </p>
+
+              <span className="mt-6 h-px w-10 bg-purple-500 transition-all duration-300 group-hover:w-20" />
+            </article>
+          ))}
         </div>
 
-        {/* Process steps */}
-        <div className="relative mt-20 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-7">
-          {/* Connecting line on desktop */}
-          <div className="absolute left-[8%] right-[8%] top-[72px] hidden h-px bg-gradient-to-r from-purple-500/20 via-purple-400 to-indigo-400/20 lg:block" />
+        {/* Footer */}
+        <footer className="mt-20 flex w-full flex-col items-center justify-center gap-8 border-t border-white/10 pt-8 text-center sm:flex-row sm:justify-between">
+          <p className="font-serif text-2xl italic text-purple-300">
+            Better Ideas. Better Web.
+          </p>
 
-          {approach.map((item) => {
-            const Icon = item.icon;
-
-            return (
-              <article key={item.number} className="group relative">
-                {/* Icon panel */}
-                <div className="relative mb-8 flex h-36 w-36 items-center justify-center rounded-[2rem] border border-purple-300/25 bg-white/[0.04] shadow-[0_0_40px_rgba(124,58,237,0.12)] backdrop-blur-xl transition duration-500 group-hover:-translate-y-2 group-hover:border-purple-300/70 group-hover:shadow-[0_0_55px_rgba(139,92,246,0.3)]">
-                  <div className="absolute inset-2 rounded-[1.5rem] border border-white/[0.06]" />
-
-                  <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-purple-500/10 via-transparent to-indigo-500/10 opacity-70" />
-
-                  <Icon
-                    size={43}
-                    strokeWidth={1.5}
-                    className="relative text-purple-200 transition duration-500 group-hover:scale-110 group-hover:text-white"
-                  />
-
-                  <span className="absolute -bottom-4 left-2 flex h-10 w-10 items-center justify-center rounded-full border border-purple-400/40 bg-[#130d2b] text-sm font-medium text-white shadow-lg shadow-purple-900/40">
-                    {item.number}
-                  </span>
-                </div>
-
-                {/* Text */}
-                <h3 className="text-xl font-semibold tracking-tight sm:text-2xl">
-                  {item.name}
-                </h3>
-
-                <p className="mt-4 max-w-xs text-sm leading-7 text-indigo-100/70">
-                  {item.description}
-                </p>
-
-                <div className="mt-6 h-px w-12 bg-purple-500 transition-all duration-500 group-hover:w-24 group-hover:bg-purple-300" />
-              </article>
-            );
-          })}
-        </div>
-
-        {/* Bottom signature */}
-        <div className="mt-24 flex flex-col gap-8 border-t border-white/10 pt-8 md:flex-row md:items-center md:justify-between">
-          <div>
-            <p className="font-serif text-2xl italic text-purple-300 sm:text-3xl">
-              Better Ideas.
-            </p>
-            <p className="ml-8 font-serif text-2xl italic text-purple-300 sm:text-3xl">
-              Better Web.
-            </p>
-          </div>
-
-          <div className="flex flex-wrap items-center gap-3 text-[10px] uppercase tracking-[0.25em] text-indigo-200/70 sm:gap-5">
+          <div className="flex flex-wrap items-center justify-center gap-3 text-[10px] uppercase tracking-[0.2em] text-indigo-200/70 sm:gap-4">
             <span>Plan</span>
             <span className="text-purple-400">/</span>
             <span>Design</span>
@@ -141,13 +132,13 @@ export default function Myapproach() {
             <span>Develop</span>
             <span className="text-purple-400">/</span>
             <span>Improve</span>
-
             <ArrowUpRight
-              size={16}
-              className="ml-1 text-purple-300"
+              size={15}
+              className="text-purple-300"
+              aria-hidden="true"
             />
           </div>
-        </div>
+        </footer>
       </div>
     </section>
   );
