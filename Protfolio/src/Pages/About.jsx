@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
+import Myapproach from "../Components/Myapproach";
 
-export default function About({ title, para,photo, button }) {
+export default function About({ title, para, photo, button }) {
   return (
     <section className="relative overflow-hidden bg-[#0B0912] px-6 py-24 text-white sm:px-10 lg:py-32">
 
       {/* Background Effects */}
-      <div className="absolute -right-32 top-20 h-72 w-72 rounded-full bg-purple-600/20 blur-[120px]"></div>
-      <div className="absolute -left-20 bottom-10 h-72 w-72 rounded-full bg-indigo-600/20 blur-[120px]"></div>
+      <div className="absolute -left-32 top-20 h-72 w-72 rounded-full bg-purple-600/20 blur-[120px]"></div>
+      <div className="absolute -right-20 bottom-10 h-72 w-72 rounded-full bg-indigo-600/20 blur-[120px]"></div>
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-16 md:grid-cols-2">
 
@@ -47,17 +47,14 @@ export default function About({ title, para,photo, button }) {
             {para}
           </p>
 
-              <Link
-                to="/contact"
-                   className="group inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 px-7 py-4 font-semibold shadow-lg shadow-purple-900/30 transition duration-300 hover:-translate-y-1 hover:shadow-purple-500/30"
-               >
-             {button}
-           <span className="transition-transform duration-300 group-hover:translate-x-1">
-                  →
-              </span>
-             </Link>
+          <button className="group inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 px-7 py-4 font-semibold shadow-lg shadow-purple-900/30 transition duration-300 hover:-translate-y-1 hover:shadow-purple-500/30">
+            {button}
+            <span className="transition-transform duration-300 group-hover:translate-x-1">
+              →
+            </span>
+          </button>
         </div>
-
+      <Myapproach/>
       </div>
     </section>
   );
